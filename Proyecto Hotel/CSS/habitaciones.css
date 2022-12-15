@@ -1,0 +1,46 @@
+/* Barra de navegacion */
+
+.editar img{
+	width: 150px;
+	margin-left: 20px;
+	margin-right: -160px;
+}
+
+.editar ul{
+	color: white;
+	font-size: 22px;
+	font-family: 'Crimson Text', serif;
+}
+
+.editar button{
+	margin-right: 20px;
+}
+
+.col-12{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+/* Titulo */
+
+.titulo h1{
+	margin-top: 50px;
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+/* cartas */
+
+.carta{
+    margin-top: 80px;
+}
+
+.carta .boton{
+    margin-top: 50px;
+}
+
+/* Footer */
+
+footer{
+	margin-top: 100px;
+}

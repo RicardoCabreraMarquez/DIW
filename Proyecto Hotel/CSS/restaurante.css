@@ -1,0 +1,61 @@
+/* Barra de navegacion */
+
+.editar img{
+	width: 150px;
+	margin-left: 20px;
+	margin-right: -160px;
+}
+
+.editar ul{
+	color: white;
+	font-size: 22px;
+	font-family: 'Crimson Text', serif;
+}
+
+.editar button{
+	margin-right: 20px;
+}
+
+.col-12{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+/* Banner */
+
+.masthead {
+    height: 50vh;
+    min-height: 500px;
+    background-image: url('../RECURSOS/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fondo{
+    backdrop-filter: blur(12px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.33);
+}
+
+.fondo h1{
+    color: white;
+    font-size: 45px;
+    -webkit-text-stroke: 0.6px black;
+}
+
+/* Cartas */
+
+.cartas{
+    margin-top: 100px;
+}
+
+.boton{
+    margin-top: 30px;
+}
+
+/* Footer */
+
+.footer{
+    margin-top: 100px;
+}

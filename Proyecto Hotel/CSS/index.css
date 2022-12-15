@@ -1,0 +1,61 @@
+/* Barra de navegacion */
+
+.editar img{
+	width: 150px;
+	margin-left: 20px;
+	margin-right: -160px;
+}
+
+.editar ul{
+	color: white;
+	font-size: 22px;
+	font-family: 'Crimson Text', serif;
+}
+
+.editar button{
+	margin-right: 20px;
+}
+
+.col-12{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+/* Texto de la pagina */
+
+.texto{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.texto h1{
+	margin-top: 70px;
+	font-size: 35px;
+}
+
+.texto h2{
+	font-size: 21px;
+	font-weight: normal;
+}
+
+.texto p{
+	margin: 30px;
+}
+
+/* Cartas */
+
+.cartas {
+	margin-top: 100px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cards {
+	margin-top: 50px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cards1 {
+	margin-top: 50px;
+	margin-bottom: 120px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
