@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    @keyframes rotate-gear{
+        from{
+            transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(360deg);
+        }
+    }
+
+    .gear {
+        animation-name: rotate-gear;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes fromBellow{
+        0%{
+            transform: translateY(0%);
+        }
+        50%{
+            transform: translateY(200%);
+        }
+        100%{
+            transform: translateY(0%);
+        }
+    }
+
+    #logo:hover .gear{
+        animation: fromBellow 500ms linear;
+    }
+
+    @font-face{
+        font-family: "WebSymbolsRegular";
+        src: url('../css/fonts/websymbols-regular-webfont.eot');
+        src: url('../css/fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../css/fonts/websymbols-regular-webfont.woff') format('woff'),
+             url('../css/fonts/websymbols-regular-webfont.ttf') format('truetype'),
+             url('../css/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .gear, .icon{
+        font-family: "WebSymbolsRegular"; 
+    }
+}
