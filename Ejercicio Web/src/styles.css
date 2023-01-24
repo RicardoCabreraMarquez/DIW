@@ -3,36 +3,9 @@
 @tailwind utilities;
 
 @layer base{
-    @keyframes rotate-gear{
-        from{
-            transform: rotateZ(0deg);
-        }
-        to{
-            transform: rotateZ(360deg);
-        }
-    }
 
-    .gear {
-        animation-name: rotate-gear;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-
-    @keyframes fromBellow{
-        0%{
-            transform: translateY(0%);
-        }
-        50%{
-            transform: translateY(200%);
-        }
-        100%{
-            transform: translateY(0%);
-        }
-    }
-
-    #logo:hover .gear{
-        animation: fromBellow 500ms linear;
+    body{
+        background-image: url("../img/pattern.png");
     }
 
     @font-face{
@@ -48,5 +21,49 @@
 
     .gear, .icon{
         font-family: "WebSymbolsRegular"; 
+    }
+
+    @font-face{
+        font-family: "BebasNeue";
+        src: url('fonts/BebasNeue.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    #header{
+        font-family: "BebasNeue";
+    }
+
+    #banner{
+        background: url("../img/bakbaner.png");
+        background-position: -200px -200px;
+    }
+
+    #banner h1{
+        font-family: 'BebasNeue';
+    }
+
+    @font-face{
+        font-family: "TrebuchetMS";
+        src: url('fonts/TrebuchetMS.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .card .category{
+        font-family: "TrebuchetMS";
+    }
+
+    .card .description{
+        font-family: "TrebuchetMS";
+    }
+
+    #lateral{
+        font-family: "TrebuchetMS";
+    }
+
+    #lateral h3{
+        background: url('../img/pxgray.png'), white;
+        font-family: "BebasNeue";
     }
 }
