@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,13 +7,17 @@
     <title>Máster en CSS</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
-<body>
+
+<body class="bg-pattern">
     <header id="header" class="bg-black h-20 text-white w-full">
         <div class="wrap w-8/12 mx-auto">
             <div id="logo" class="group float-left w-48 bg-azul-claro text-center mt-2 ml-5 tracking-widest cursor-pointer overflow-hidden duration-300 hover:rounded-sm 
                 hover:text-black hover:bg-gray-200 flex-1">
-                <span class="gear block float-left text-3xl mt-2 ml-7 animate-rotategear group-hover:animate-frombellow">S</span>
-                <h3 class="block float-right text-4xl mt-1.5 mr-16 transition duration-100 group-hover:animate-fromright">BLOG</h3>
+                <span
+                    class="gear block float-left text-3xl mt-2 ml-7 animate-rotategear group-hover:animate-frombellow">S</span>
+                <h3
+                    class="block float-right text-4xl mt-1.5 mr-16 transition duration-100 group-hover:animate-fromright">
+                    BLOG</h3>
             </div>
 
             <nav id="menu" class="float-right h-20 bg-transparent">
@@ -21,7 +26,7 @@
                         hover:scale-125">INICIO</a></li>
                     <li class="text-2xl inline-block m-5 tracking-wider"><a href="#" class="block transition duration-200 hover:text-azul-claro transform 
                         hover:scale-125">BLOG</a></li>
-                    <li class="text-2xl inline-block m-5 tracking-wider" ><a href="#" class="block transition duration-200 hover:text-azul-claro transform 
+                    <li class="text-2xl inline-block m-5 tracking-wider"><a href="#" class="block transition duration-200 hover:text-azul-claro transform 
                         hover:scale-125">FORMACIÓN</a></li>
                     <li class="text-2xl inline-block m-5 tracking-wider"><a href="#" class="block transition duration-200 hover:text-azul-claro transform 
                         hover:scale-125">CONTACTO</a></li>
@@ -30,12 +35,13 @@
         </div>
     </header>
 
-    <section class="wrap wrap-content w-8/12 mx-auto ">
+    <section class="wrap wrap-content w-8/12 mx-auto">
         <section id="info">
 
             <!-- Inicio Banner -->
-            <div id="banner" class="w-11/12 h-24 border-8 border-solid border-white shadow m-5 overflow-hidden animate-backbanner">
-                <h1 class="block w-9/12 text-white text-4xl font-normal tracking-widest m-7 animate-showtext">CURSOS DE DESARROLLO WEB</h1>
+            <div id="banner" class="w-11/12 h-24 border-8 border-solid border-white shadow m-5 overflow-hidden bg-bakbaner animate-backbanner">
+                <h1 class="block w-9/12 text-white text-4xl font-normal tracking-widest m-7 animate-showtext">CURSOS DE
+                    DESARROLLO WEB</h1>
             </div>
             <!-- Fin Banner -->
 
@@ -104,69 +110,253 @@
 
             </div>
             <!--Fin Tarjetas-->
-            
+
 
         </section>
 
         <div class="clearfix float-none clear-both"></div>
         <aside id="lateral" class="w-72 min-h-screen float-right m-5">
 
-            <h3 class="block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5">BUSCAR</h3>
+            <h3
+                class="block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5">
+                BUSCAR</h3>
             <div id="search" class="w-11/12 h-7 m-2.5 bg-white border border-solid border-gray-300 rounded shadow">
                 <form>
-                    <input type="text" class="w-4/5 h-7 border-none pl-1 rounded bg-transparent text-gray-300 transition-all duration-300 focus:text-gray-500" />
+                    <input type="text"
+                        class="w-4/5 h-7 border-none pl-1 rounded bg-transparent text-gray-300 transition-all duration-300 focus:text-gray-500" />
                     <input type="button" value="L" class="icon h-7 cursor-pointer text-base bg-transparent border-l border-solid border-gray-200 text-gray-500
                     pl-1.5" />
                 </form>
             </div>
 
-            <h3 class="block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5">LOGIN</h3>
-            <div id="login" class="aside-box w-10/12 h-60 m-0 mt-5 pt-0.5 bg-white shadow-md">
+            <h3
+                class="block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5">
+                LOGIN</h3>
+            <div id="login" class="aside-box w-10/12 h-60 m-auto mt-5 pt-0.5 bg-white shadow-md">
                 <form>
-                    <label id="user" class="icon">U</label>
-                    <input type="email" class="block m-0 mt-5 w-4/5 h-7 border border-solid border-gray-200 shadow rounded pl-7 text-gray-400 focus:text-gray-500 
-                                focus:shadow-inner" />
+                    <label id="user" class="icon block text-center absolute ml-3.5 mt-1.5 h-7">U</label>
+                    <input type="email" class="block m-auto mt-5 w-11/12 h-7 border border-solid border-gray-200 shadow rounded pl-7 text-gray-400 focus:text-gray-500 
+                    focus:shadow-inner" />
 
-                    <label id="password" class="icon">w</label>
-                    <input type="password" class="block m-0 mt-5 w-4/5 h-7 border border-solid border-gray-200 shadow rounded pl-7 text-gray-400 focus:text-gray-500 
-                    focus:shadow-inner"/>
+                    <label id="password" class="icon block text-center absolute h-7 ml-4 mt-6 text-lg">w</label>
+                    <input type="password" class="block m-auto mt-5 w-11/12 h-7 border border-solid border-gray-200 shadow rounded pl-7 text-gray-400 focus:text-gray-500 
+                    focus:shadow-inner" />
 
-                    <input type="submit" value="Entrar" />
-                    <input type="reset" value="Limpiar" />
+                    <input type="submit" value="Entrar" class="text-center w-24 h-8 mt-5 text-white border border-solid border-azul-oscuro rounded-none cursor-pointer
+                    text-sm font-extralight ml-4 mb-5 transition-all duration-300 hover:shadow" />
+                    <input type="reset" value="Limpiar" class="text-center w-24 h-8 mt-5 text-white border border-solid border-azul-oscuro rounded-none cursor-pointer
+                    text-sm font-extralight ml-4 mb-5 transition-all duration-300 hover:shadow" />
 
-                    <a href="#">Registrate aquí</a>
-                    <a href="#">¿Has olvidado tu contraseña?</a>
+                    <a href="#"
+                        class="block text-sm no-underline ml-4 text-gray-500 hover:underline hover:text-azul-medio">Registrate
+                        aquí</a>
+                    <a href="#"
+                        class="block text-sm no-underline ml-4 text-gray-500 hover:underline hover:text-azul-medio">¿Has
+                        olvidado tu contraseña?</a>
                 </form>
             </div>
 
-            <h3 class="block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5">REDES SOCIALES</h3>
-            <div id="social" class="aside-box">
-                <div class="twitter">
-                    <a href="#" class="icon">t</a>
-                    <p class="overlay">
+            <h3
+                class="block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5">
+                REDES SOCIALES</h3>
+            <div id="social" class="aside-box w-10/12 m-auto mt-5 pt-0.5 bg-white shadow-md h-48">
+                <div class="twitter group">
+                    <a href="#" class="icon block text-gray-600 no-underline text-3xl ml-5 mt-2.5 mb-5">t</a>
+                    <p class="overlay block h-5 font-bold tracking-wider border-2 border-solid border-white shadow bg-gris-claro absolute p-1 ml-16 opacity-0
+                    transition-all duration-300 group-hover:opacity-100">
                         Twitter
                     </p>
                 </div>
-                <div class="facebook">
-                    <a href="#" class="icon">f</a>
-                    <p class="overlay">
+                <div class="facebook group">
+                    <a href="#" class="icon block text-gray-600 no-underline text-3xl ml-5 mt-2.5 mb-5">f</a>
+                    <p class="overlay block h-5 font-bold tracking-wider border-2 border-solid border-white shadow bg-gris-claro absolute p-1 ml-16 opacity-0
+                    transition-all duration-300 group-hover:opacity-100">
                         Facebook
                     </p>
                 </div>
-                <div class="youtube">
-                    <a href="#" class="icon">y</a>
-                    <p class="overlay">
+                <div class="youtube group">
+                    <a href="#" class="icon block text-gray-600 no-underline text-3xl ml-5 mt-2.5 mb-5">y</a>
+                    <p class="overlay block h-5 font-bold tracking-wider border-2 border-solid border-white shadow bg-gris-claro absolute p-1 ml-16 opacity-0
+                    transition-all duration-300 group-hover:opacity-100">
                         Youtube
                     </p>
                 </div>
             </div>
 
-            <h3 class="block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5">PATROCINADORES</h3>
-            <div id="sponsors" class="aside-box">
+            <h3
+                class="block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5">
+                PATROCINADORES</h3>
+            <div id="sponsors" class="aside-box w-10/12 m-auto mt-5 pt-0.5 bg-white shadow-md h-48">
 
             </div>
 
         </aside>
-    
+
+        <section id="articles" class="w-8/12 float-left">
+            <h2
+                class="block w-full h-16 text-center text-4xl font-normal tracking-widest shadow-lateral-h3 m-auto mt-5 mb-3.5">
+                Últimos artículos</h2>
+            <div class="clearfix float-none clear-both" class="float-none clear-both"></div>
+            <article class="w-11/12 border border-solid border-gray-100 m-10 mx-auto p-2.5 bg-white text-black shadow ">
+                <div class="data float-right bg-gris-oscuro text-white h-7 leading-7 p-1 text-xs rounded-bl-md">
+                    <span class="m-1.5">Fecha: 12 dic</span>
+                    <span class="m-1.5">Categoría: Pruebas</span>
+                </div>
+                <h4 class="block text-2xl m-0.5">
+                    <a href="#" class="no-underline text-azul-oscuro hover:underline">Titulo del artículo</a>
+                </h4>
+                <p class="mt-2.5 mb-2.5 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+                    finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
+                    justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
+                    justo magna. Aenean suscipit ultricies auctor.
+                </p>
+            </article>
+
+            <article class="w-11/12 border border-solid border-gray-100 m-10 mx-auto p-2.5 bg-white text-black shadow">
+                <div class="data float-right bg-gris-oscuro text-white h-7 leading-7 p-1 text-xs rounded-bl-md">
+                    <span class="m-1.5">Fecha: 12 dic</span>
+                    <span class="m-1.5">Categoría: Pruebas</span>
+                </div>
+                <h4 class="block text-2xl m-0.5">
+                    <a href="#" class="no-underline text-azul-oscuro hover:underline">Titulo del artículo</a>
+                </h4>
+                <p class="mt-2.5 mb-2.5 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+                    finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
+                    justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
+                    justo magna. Aenean suscipit ultricies auctor.
+                </p>
+            </article>
+            <article class="w-11/12 border border-solid border-gray-100 m-10 mx-auto p-2.5 bg-white text-black shadow">
+                <div class="data float-right bg-gris-oscuro text-white h-7 leading-7 p-1 text-xs rounded-bl-md">
+                    <span class="m-1.5">Fecha: 12 dic</span>
+                    <span class="m-1.5">Categoría: Pruebas</span>
+                </div>
+                <h4 class="block text-2xl m-0.5">
+                    <a href="#" class="no-underline text-azul-oscuro hover:underline">Titulo del artículo</a>
+                </h4>
+                <p class="mt-2.5 mb-2.5 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+                    finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
+                    justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
+                    justo magna. Aenean suscipit ultricies auctor.
+                </p>
+            </article>
+            <article class="w-11/12 border border-solid border-gray-100 m-10 mx-auto p-2.5 bg-white text-black shadow">
+                <div class="data float-right bg-gris-oscuro text-white h-7 leading-7 p-1 text-xs rounded-bl-md">
+                    <span class="m-1.5">Fecha: 12 dic</span>
+                    <span class="m-1.5">Categoría: Pruebas</span>
+                </div>
+                <h4 class="block text-2xl m-0.5">
+                    <a href="#" class="no-underline text-azul-oscuro hover:underline">Titulo del artículo</a>
+                </h4>
+                <p class="mt-2.5 mb-2.5 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+                    finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
+                    justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
+                    justo magna. Aenean suscipit ultricies auctor.
+                </p>
+            </article>
+            <article class="w-11/12 border border-solid border-gray-100 m-10 mx-auto p-2.5 bg-white text-black shadow">
+                <div class="data float-right bg-gris-oscuro text-white h-7 leading-7 p-1 text-xs rounded-bl-md">
+                    <span class="m-1.5">Fecha: 12 dic</span>
+                    <span class="m-1.5">Categoría: Pruebas</span>
+                </div>
+                <h4 class="block text-2xl m-0.5">
+                    <a href="#" class="no-underline text-azul-oscuro hover:underline">Titulo del artículo</a>
+                </h4>
+                <p class="mt-2.5 mb-2.5 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+                    finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
+                    justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
+                    justo magna. Aenean suscipit ultricies auctor.
+                </p>
+            </article>
+            <article class="w-11/12 border border-solid border-gray-100 m-10 mx-auto p-2.5 bg-white text-black shadow">
+                <div class="data float-right bg-gris-oscuro text-white h-7 leading-7 p-1 text-xs rounded-bl-md">
+                    <span class="m-1.5">Fecha: 12 dic</span>
+                    <span class="m-1.5">Categoría: Pruebas</span>
+                </div>
+                <h4 class="block text-2xl m-0.5">
+                    <a href="#" class="no-underline text-azul-oscuro hover:underline">Titulo del artículo</a>
+                </h4>
+                <p class="mt-2.5 mb-2.5 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+                    finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
+                    justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
+                    justo magna. Aenean suscipit ultricies auctor.
+                </p>
+            </article>
+            <article id="blog" class="group w-11/12 border border-solid border-gray-100 m-10 mb-10 my-auto p-2.5 bg-white text-black shadow h-24 mt-14 text-center 
+            transition-all duration-1000 hover:bg-gris-fondo hover:border-8 hover:border-solid hover:border-azul-claro hover:rounded-full hover:shadow hover:animate-blink">
+                <a href="#"
+                    class="block text-4xl tracking-widest text-azul-oscuro no-underline transition-all duration-1000 mt-3.5 group-hover:text-white">Ir
+                    al blog</a>
+            </article>
+        </section>
+    </section>
+
+    <div class="clearfix float-none clear-both"></div>
+    <footer id="footer" class="w-full h-banner bg-black text-white overflow-hidden">
+        <div class="wrap w-8/12 mx-auto">
+
+            <div id="menu_footer" class="float-left w-80 h-96 m-10 text-center text-white">
+                <h5 class="block h-12 tracking-widest text-center text-4xl text-black rounded mb-3.5">MENÚ</h5>
+                <ul class="text-left m-5 text-2xl">
+                    <li class="group mt-2.5 p-1 border-b border-solid border-gray-200"><a href="#" class="no-underline text-azul-claro block h-10 transition-all duration-300
+                    group-hover:pl-10 group-hover:text-white group-hover:w-full">INICIO</a></li>
+                    <li class="group mt-2.5 p-1 border-b border-solid border-gray-200"><a href="#" class="no-underline text-azul-claro block h-10 transition-all duration-300
+                    group-hover:pl-10 group-hover:text-white group-hover:w-full">BLOG</a></li>
+                    <li class="group mt-2.5 p-1 border-b border-solid border-gray-200"><a href="#" class="no-underline text-azul-claro block h-10 transition-all duration-300
+                    group-hover:pl-10 group-hover:text-white group-hover:w-full">FORMACIÓN</a></li>
+                    <li class="group mt-2.5 p-1 border-b border-solid border-gray-200"><a href="#" class="no-underline text-azul-claro block h-10 transition-all duration-300
+                    group-hover:pl-10 group-hover:text-white group-hover:w-full">CONTACTO</a></li>
+                </ul>
+            </div>
+
+            <div id="location" class="float-left w-80 h-96 m-10 text-center text-white">
+                <h5 class="block h-12 tracking-widest text-center text-4xl text-black rounded mb-3.5">¿DONDE ESTAMOS?</h5>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4970246176654!2d-3.6887369813251425!3d40.419991998209966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289a4a865227%3A0x98278b3a144a86f1!2sPuerta%20de%20Alcal%C3%A1!5e0!3m2!1ses!2ses!4v1574443595081!5m2!1ses!2ses"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="w-full h-72 mt-2.5 rounded 
+                    border-4 border-solid border-white shadow"></iframe>
+            </div>
+
+            <div id="info" class="float-left w-80 h-96 m-10 text-center text-white">
+                <h5 class="block h-12 tracking-widest text-center text-4xl text-black rounded mb-3.5">Desarrollado con</h5>
+                <p>
+                    <img src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png"
+                        alt="Creado HTML y CSS" class="mb-3.5"/>
+                </p>
+
+                <h5 class="block h-12 tracking-widest text-center text-4xl text-black rounded mb-3.5">Optimizado para</h5>
+                <p id="browsers">
+                    <a href="#" class="no-underline text-azul-claro transition-all delay-300">
+                        <img src="img/firefox-icon.png" alt="Firefox" title="Firefox" class="inline-block mb-3.5 w-11"/>
+                    </a>
+                    <a href="#" class="no-underline text-azul-claro transition-all delay-300">
+                        <img src="img/chrome.png" alt="Chrome" title="Chrome" class="inline-block mb-3.5 w-11"/>
+                    </a>
+                    <a href="#" class="no-underline text-azul-claro transition-all delay-300">
+                        <img src="img/Opera_256x256.png" alt="Opera" title="Opera" class="inline-block mb-3.5 w-11"/>
+                    </a>
+                    <a href="#" class="no-underline text-azul-claro transition-all delay-300">
+                        <img src="img/safari.png" alt="Safari" title="Safari" class="inline-block mb-3.5 w-11"/>
+                    </a>
+                    <a href="#" class="no-underline text-azul-claro transition-all delay-300">
+                        <img src="img/android.png" alt="android" title="android" class="inline-block mb-3.5 w-11"/>
+                    </a>
+                    <a href="#" class="no-underline text-azul-claro transition-all delay-300">
+                        <img src="img/ios.png" alt="Apple" title="Apple" class="inline-block mb-3.5 w-11"/>
+                    </a>
+                </p>
+
+                <h5 class="block h-12 tracking-widest text-center text-4xl text-black rounded mb-3.5">AUTOR</h5>
+                <p>&copy; WEB</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

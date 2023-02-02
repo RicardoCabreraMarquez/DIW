@@ -4,10 +4,6 @@
 
 @layer base{
 
-    body{
-        background-image: url("../img/pattern.png");
-    }
-
     @font-face{
         font-family: "WebSymbolsRegular";
         src: url('../css/fonts/websymbols-regular-webfont.eot');
@@ -35,7 +31,6 @@
     }
 
     #banner{
-        background: url("../img/bakbaner.png");
         background-position: -200px -200px;
     }
 
@@ -65,5 +60,59 @@
     #lateral h3{
         background: url('../img/pxgray.png'), white;
         font-family: "BebasNeue";
+    }
+
+    #login input[type="submit"],
+    #login input[type="button"],
+    #login input[type="reset"],
+    #login button{
+        background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+        font-family: "TrebuchetMS";
+    }
+
+    #social .overlay{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -52px;
+        transform: translateX(-80%);
+    }
+
+    #social div:hover .overlay{
+        transform: translateX(0%);
+    }
+
+    #articles h2{
+        line-height: 75px;
+        font-family: "BebasNeue";
+        background: url('../img/pxgray.png'), white;
+    }
+
+    #articles article{
+        font-family: "TrebuchetMS";
+    }
+
+    #articles .data{
+        margin:-10px;
+    }
+
+    #blog{
+        line-height: 100px;
+    }
+
+    #blog a{
+        font-family: "BebasNeue";
+    }
+
+    #blog:hover a{
+        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black, 1px 4px 1px black, 1px 5px 1px black, 1px 6px 1px black;
+    }
+
+    #footer .wrap > div{
+        font-family: "TrebuchetMS";
+    }
+
+    #footer h5{
+        background: url('../img/pxgray.png'), white;
+        font-family: "BebasNeue";
+        line-height: 55px;
     }
 }
