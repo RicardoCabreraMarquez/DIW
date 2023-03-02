@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio- Glyvest</title>
+    <link rel="icon" type="image/png" href="../image/icono.png"/>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+<body id="scroll" class="Mitr">
+
+    <!-- Div para editar perfil y mensaje cambio de contraseña -->
+
+    <div id="editfondo" class="bg-fondo w-full h-screen fixed z-30 hidden"></div>
+
+    <div id="editdiv" class="w-weditsmall h-login fixed bg-white z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl hidden md:w-wedit sm:w-weditmovil">
+        <i id="cerrar" onclick="cerrar()" class="fa-solid fa-xmark text-xl text-red-500 mt-2 ml-3 fixed cursor-pointer"></i>
+        <p class="text-center text-xl mt-2">Editar perfil</p>
+        <hr class="mt-2 border-gray-300">
+        <p class="mt-3 text-lg text-center font-bold underline decoration-solid">Foto del perfil</p>
+        <img id="imagen" src="../image/photoprofile.jpg" class="w-36 m-auto mt-5 rounded-full border border-black">
+        <div class="flex justify-center mt-7">
+            <label for="input-file" class="cursor-pointer bg-principal hover:bg-red-700 text-white py-2 px-6 rounded-xl">
+                Cambiar Foto
+                <input id="input-file" type="file" class="hidden">
+            </label>   
+        </div>
+        <p class="mt-10 text-lg text-center font-bold underline decoration-solid">Nombre de usuario</p>
+        <div class="flex justify-center mt-7">
+            <label for="input" class="mr-2">Nombre de usuario: &nbsp; &nbsp;</label>
+            <input class="border border-black w-60 h-8 rounded-lg focus:outline-none icon" type="text" placeholder="  @Username" name="uname" required>
+        </div>
+        <div class="flex justify-center mt-12">
+            <button type="button" onclick="cerrar()" class="w-40 h-10 bg-principal rounded-xl text-white transform duration-300 hover:scale-105">Guardar Cambios</button>
+        </div>
+        <p class="text-center mt-3">¿Quieres cambiar tu contraseña? <span onclick="contraseña()" class="underline cursor-pointer">Pinche aqui</span></p>   
+    </div>
+     
+    <div id="mensaje" class="w-contraseña h-52 bg-white fixed z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl hidden">
+        <i id="contraseña" onclick="cerrarMensaje()" class="fa-solid fa-xmark text-xl text-red-500 mt-2 ml-3 fixed cursor-pointer"></i>
+        <p class="text-center text-lg mt-1">¡ALERTA!</i></p>
+        <hr class="mt-1 border-gray-300">
+        <p class="text-center mt-12 text-lg">Se ha enviado un correo con un enlace <br>para cambiar la contraseña.</p>
+    </div>
+
+    <div id="menuderecha" class="h-screen w-96 fixed bg-white z-30 float-right right-0 hidden">
+        <ul class="mt-80 ml-10 text-xl">
+            <li class="w-screen mb-3 mt-3 hover:text-principal cursor-pointer"><i class="fa-solid fa-house mr-3"></i>Inicio</li>
+            <hr>
+            <li class="mb-3 mt-3 hover:text-principal cursor-pointer"><i class="fa-solid fa-image mr-3"></i>Subir Foto/Video</li>
+            <hr>
+            <li class="mb-3 mt-3 hover:text-principal cursor-pointer">Prueba</li>
+            <hr>
+            <li class="mb-3 mt-3 hover:text-principal cursor-pointer">Prueba</li>
+        </ul>
+    </div>
+
+    <div id="menuperfil" class="h-96 w-96 fixed bg-white float-left left-4 border z-30 mt-12 rounded-b-xl hidden">
+        <div class="flex justify-center">
+            <img class="w-28 mt-5 rounded-full border border-black" src="../image/photoprofile.jpg">
+        </div>
+        <p class="mt-3 text-center text-lg">@Username</p>
+        <p class="mt-5 text-center text-lg"><span class="font-bold">999</span> Siguiendo | <span class="font-bold">999</span> seguidores</p>
+        <div class="flex justify-center m-10">
+            <button type="button" onclick="editarPerfilmovil()" class="w-32 h-8 bg-principal rounded-xl text-white">Editar perfil</button>&nbsp;&nbsp;&nbsp;
+            <a href="./login.html"><button type="button" class="w-32 h-8 bg-principal rounded-xl text-white">Cerrar sesion</button></a>
+        </div>
+    </div>
+
+    <!-- Barra de navegacion -->
+
+    <nav id="nav" class="w-full h-12 bg-principal fixed inline-flex items-center z-20 Mitr">
+        <img src="../image/Logo3.png" class="w-56 ml-5 fixed hidden lg:block">
+
+        
+        <div class="container mx-auto justify-center hidden lg:flex">
+            <div class="flex rounded-xl">
+                <button class="flex items-center justify-center px-4 border-r rounded-l-xl bg-white">
+                    <svg class="w-6 h-6 text-black" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z">
+                        </path>
+                    </svg>
+                </button>
+                <input type="text" class="h-8 w-80 rounded-r-xl pl-3" placeholder="Search...">
+            </div>
+        </div>
+        
+        
+        <div class="flex items-center  lg:hidden">
+            <img onclick="menuPerfilmovil()" class="w-9 border fixed left-4 border-black rounded-full cursor-pointer" src="../image/photoprofile.jpg">
+
+            <div class="flex justify-center w-screen">
+                <img class="w-48" src="../image/Logo3.png">
+            </div>
+            
+
+            <button class="text-white fixed right-4" aria-label="Menu" onclick="menuDerecha()">
+                <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 5h20a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2zm0 7h20a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2zm0 7h20a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2z"/>
+                </svg>
+            </button>
+
+        </div>
+          
+    </nav>
+
+    
+
+    <!-- Div perfil usuario -->
+
+    <div class="h-screen w-perfil float-left mt-16 flex justify-center">
+      <img class="w-48 h-48" src="../image/photoprofile.jpg">
+    </div>
+
+    <!-- Div menu izquierda -->
+
+    <div class="h-screen w-setting float-right border-l border-principal hidden lg:block">
+        <ul class="mt-96 ml-14 text-xl">
+            <li class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i class="fa-solid fa-house mr-3"></i>Inicio</li>
+            <li class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i class="fa-solid fa-image mr-3"></i>Subir Foto/Video</li>
+            <li class="mb-4 mt-4 hover:text-principal cursor-pointer">Prueba</li>
+            <li class="mb-4 mt-4 hover:text-principal cursor-pointer">Prueba</li>
+        </ul>
+    </div>
+    <script src="../js/likeDislike.js"></script>
+    <script src="../js/divs.js"></script>
+</body>
+
+<script src="https://kit.fontawesome.com/cb69f30f5b.js" crossorigin="anonymous"></script>
+</html>
