@@ -28,7 +28,9 @@ module.exports = {
                 'contraseña': '34.375rem',
                 'weditmovil': '37.5rem',
                 'weditsmall': '31.25rem',
-                'perfil': '80%'
+                'perfil': '80%',
+                'profile': '68.75rem',
+                'profilemovil':'56.25rem',
             },
             height: {
                 'login': '37.5rem',

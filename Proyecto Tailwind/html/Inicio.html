@@ -154,7 +154,7 @@
             <img src="../image/photoprofile.jpg" class="w-8 h-8 rounded-full border border-black">
             <p class="ml-2 font-bold">Username</p>
         </div>
-        <img src="../image/photo1.jpg" class="w-login h-image self-center rounded-lg z-10">
+        <img src="../image/photo2.jpg" class="w-login h-image self-center rounded-lg z-10">
         <div class="w-login h-10 mb-2 rounded-b-xl flex justify-center items-center self-center z-10" id="crear">
             <div id="like">
                 <i id="icono3" onclick="cambiarIcono(id)" class="fa-regular fa-heart text-black text-xl"></i>
@@ -167,11 +167,14 @@
     <!-- Div menu izquierda -->
 
     <div class="h-screen w-setting fixed top-0 right-0 border-l border-principal hidden lg:block">
-        <ul class="mt-96 ml-14 text-xl">
-            <li class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i class="fa-solid fa-house mr-3"></i>Inicio</li>
-            <li class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i class="fa-solid fa-image mr-3"></i>Subir Foto/Video</li>
-            <li class="mb-4 mt-4 hover:text-principal cursor-pointer">Prueba</li>
-            <li class="mb-4 mt-4 hover:text-principal cursor-pointer">Prueba</li>
+        <ul class="mt-96 ml-14 text-xl Mitr">
+            <a href="#"><li class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i class="fa-solid fa-house mr-3"></i>Inicio</li></a>
+            <a href="perfil.html"><li class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i class="fa-solid fa-address-card mr-3"></i>Mi Perfil</li></a>
+            <a href="sugerencia.html"><li class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i class="fa-solid fa-users mr-3"></i>Sugerencias</li></a>
+            <li><label for="input-file" class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3">
+                <i class="fa-solid fa-image mr-3"></i>Subir Foto/Video
+                <input id="input-file" type="file" class="hidden">
+            </label></li>   
         </ul>
     </div>
     <script src="../js/likeDislike.js"></script>

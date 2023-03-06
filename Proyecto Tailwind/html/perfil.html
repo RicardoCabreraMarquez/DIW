@@ -111,18 +111,63 @@
 
     <!-- Div perfil usuario -->
 
-    <div class="h-screen w-perfil float-left mt-16 flex justify-center">
-      <img class="w-48 h-48" src="../image/photoprofile.jpg">
+    <div class="h-screen w-full float-left flex justify-center 2xl:w-perfil">
+        <img class="w-48 h-48 rounded-full mt-24 border border-black absolute" src="../image/photoprofile.jpg">
+        <div class="w-weditmovil h-56 bg-gray-100 border border-black mt-48 rounded-xl xl:w-profile lg:w-profilemovil">
+            <div class="w-full flex justify-center mt-36">
+                <p class="text-xl mr-14 lg:mr-36 sm:mr-20"><span class="font-bold">999</span> Siguiendo</p>
+                <p class="text-xl"><span class="font-bold">999</span> Seguidores</p>
+                <button onclick="editarperfil()" class="border border-black w-16 ml-14 text-xl rounded-md transition-all duration-00 hover:bg-black hover:text-white lg:ml-36 sm:ml-20"><i class="fa-solid fa-user-tag"></i></button>
+            </div>
+            <p class="text-center mt-24 text-xl">Fotos/Videos</p>
+            <hr class="w-28 m-auto border-black">
+            <div class="grid sm:grid-cols-1 justify-center lg:grid-cols-3 mt-10">
+                <div class="place-self-center mx-2">
+                    <img class="w-login rounded-md lg:w-72" src="../image/photo1.jpg">
+                </div>
+                <div class="place-self-center mx-2 ">
+                    <video class="w-login mt-10 rounded-md lg:w-72 lg:mt-0" src="../image/video1.mp4" autoplay></video>
+                </div>
+                <div class="place-self-center mx-2">
+                    <img class="w-login mt-10 rounded-md lg:w-72 lg:mt-0" src="../image/photo2.jpg">
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-1 mt-0 justify-center lg:grid-cols-3 lg:mt-10">
+                <div class="place-self-center mx-2">
+                    <img class="w-login mt-10 rounded-md lg:w-72 lg:mt-0" src="../image/photo3.jpg">
+                </div>
+                <div class="place-self-center mx-2 ">
+                    <img class="w-login mt-10 rounded-md lg:w-72 lg:mt-0" src="../image/photo4.jpg">
+                </div>
+                <div class="place-self-center mx-2">
+                    <video class="w-login mt-10 rounded-md lg:w-72 lg:mt-0" src="../image/video2.mp4" autoplay></video>
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-1 mt-0 justify-center lg:grid-cols-3 lg:mt-10">
+                <div class="place-self-center mx-2">
+                    <video class="w-login mt-10 rounded-md lg:w-72 lg:mt-0" src="../image/video3.mp4" autoplay></video>
+                </div>
+                <div class="place-self-center mx-2 ">
+                    <img class="w-login mt-10 rounded-md lg:w-72 lg:mt-0" src="../image/photo5.jpg">
+                </div>
+                <div class="place-self-center mx-2">
+                    <img class="w-login mt-10 rounded-md lg:w-72 lg:mt-0" src="../image/photo6.jpg">
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Div menu izquierda -->
 
-    <div class="h-screen w-setting float-right border-l border-principal hidden lg:block">
-        <ul class="mt-96 ml-14 text-xl">
-            <li class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i class="fa-solid fa-house mr-3"></i>Inicio</li>
-            <li class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i class="fa-solid fa-image mr-3"></i>Subir Foto/Video</li>
-            <li class="mb-4 mt-4 hover:text-principal cursor-pointer">Prueba</li>
-            <li class="mb-4 mt-4 hover:text-principal cursor-pointer">Prueba</li>
+    <div class="h-screen w-setting fixed top-0 right-0 float-right border-l border-principal hidden 2xl:block">
+        <ul class="mt-96 ml-14 text-xl Mitr">
+            <a href="Inicio.html"><li class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i class="fa-solid fa-house mr-3"></i>Inicio</li></a>
+            <a href="#"><li class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i class="fa-solid fa-address-card mr-3"></i>Mi Perfil</li></a>
+            <a href="sugerencia.html"><li class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3"><i class="fa-solid fa-users mr-3"></i>Sugerencias</li></a>
+            <li><label for="input-file" class="mb-4 mt-4 hover:text-principal cursor-pointer duration-300 transition-all hover:ml-3">
+                <i class="fa-solid fa-image mr-3"></i>Subir Foto/Video
+                <input id="input-file" type="file" class="hidden">
+            </label></li>   
         </ul>
     </div>
     <script src="../js/likeDislike.js"></script>
